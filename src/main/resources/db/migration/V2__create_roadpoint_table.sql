@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS road_point (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT,
+    deadline TIMESTAMP,
+    create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    user_id BIGINT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES "user"(id) ON DELETE CASCADE
+);

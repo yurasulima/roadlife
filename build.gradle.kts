@@ -24,6 +24,8 @@ repositories {
 }
 
 dependencies {
+	testImplementation("org.mockito:mockito-core:5.14.2")
+
 	implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-security")
